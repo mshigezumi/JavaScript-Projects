@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic AJAX Demo</title>
+		<script src="./jquery-3.5.1.js" type="text/javascript"></script>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        $(document).ready(function() { // Excecute the following function when the DOM is fully loaded
+            $("html").append( // Adding HTML to the document through a jQuery function
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                            <p id='4'>Paragraph 4</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            $("#1").click(function() { // When an element with the id of 1 is clicked toggle element with the id of 4
+                $("#4").toggle();
+            });
+            $("#2").css({"color":"red"}); // Color the element with the id of 2 red with CSS
+            $("#3").click(function() { // When an element with the id of 3 is clicked hide the h1 element
+                $('h1').hide();
+            });
+        });
+    </script>
+</html>
