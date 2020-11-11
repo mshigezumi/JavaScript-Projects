@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=“en”>
+    <head>
+        <title>[TITLE GOES HERE]</title>
+        <meta charset=“utf-8”>
+	</head>
+
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            // Creates a text string
+            var Waifu = "<series>" +
+            "<name>Lucina</name>" +
+            "<series>Fire Emblem</series>" +
+            "<title>Awakening</title>" +
+            "</series>";
+
+            // Creates an XML DOM parser
+            XML_Parser = new DOMParser();
+
+            // Creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Waifu,"text/xml");
+
+            document.getElementById("XML_Example").innerHTML =
+            XML_Document.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
