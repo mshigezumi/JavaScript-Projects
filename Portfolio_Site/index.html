@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang=“en”>
+	<head>
+		<title>Michael Shigezumi's Portfolio</title>
+        <meta charset=“utf-8”>
+        <link rel="stylesheet" type="text/css" href="./Stylesheet/Portfolio.css">
+        <script src="./JS/Portfolio.js" defer></script>
+	</head>
+
+	<body>
+        
+        <!-- NAVBAR -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <!-- NAVBAR END -->
+
+        <br>
+        <br>
+
+        <!-- HOME -->
+        <div id="Home">
+            <video autoplay muted loop class="Typing_Video">
+                <source src="./Stylesheet/Video/Typing.mp4" type="video/mp4">
+                Error displaying video.
+            </video>
+        </div>
+
+        <div class="Video_Text">
+            <h1>Michael Shigezumi's Portfolio</h1>
+            <p> <!-- Customize all the text --> <!-- Bold and center in CSS instead? -->
+                <q>The computer programmer is a creator of universes for which he alone is the lawgiver. 
+				No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or 
+				field of battle and to command such unswervingly dutiful actors or troops.</q>
+                <br>-Joseph Weizenbaum
+                <br>
+				<br>My name is Michael Shigezumi. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                <br>
+				<br>Thank you for stopping by and enjoy! 
+            </p>
+        </div>
+        <!-- HOME END -->
+
+        <!-- SLIDESHOW -->
+        <div id="Slideshow">
+            <div class="Slideshow_Background">
+                <div class="Slideshow_Container">
+                    <div class="Slide Fade">
+                        <img class="Slide_Image" src="./Stylesheet/Images/Placeholder.jpg" alt="">
+                        <div class="Slide_Number">1/6</div>
+                        <div class="Slide_Text">I'm available to assist you on your project!<br>[The picture is a place holder]</div>
+                    </div>
+
+                    <div class="Slide Fade">
+                        <img class="Slide_Image" src="./Stylesheet/Images/HTML_CSS_and_JavaScript.jpeg" alt="">
+                        <div class="Slide_Number">2/6</div>
+                        <div class="Slide_Text">I am a full-stack software developer,<br> trained in: HTML, CSS, JavaScript,</div>
+                    </div>
+
+                    <div class="Slide Fade">
+                        <img class="Slide_Image" src="./Stylesheet/Images/Python.png" alt="">
+                        <div class="Slide_Number">3/6</div>
+                        <div class="Slide_Text">the popular programming language Python,</div>
+                    </div>
+
+                    <div class="Slide Fade">
+                        <img class="Slide_Image" src="./Stylesheet/Images/C_Sharp_and_Dot_NET.png" alt="">
+                        <div class="Slide_Number">4/6</div>
+                        <div class="Slide_Text">C#, .NET Framework, ASP.NET, MVC,</div>
+                    </div>
+
+                    <div class="Slide Fade">
+                        <img class="Slide_Image" src="./Stylesheet/Images/SQL_and_Database.jpg" alt="">
+                        <div class="Slide_Number">5/6</div>
+                        <div class="Slide_Text">back end development, databases and SQL.</div>
+                    </div>
+
+                    <div class="Slide Fade">
+                        <img class="Slide_Image" src="./Stylesheet/Images/Coding_1.jpg" alt="">
+                        <div class="Slide_Number">6/6</div>
+                        <div class="Slide_Text">Contact me now!</div>
+                    </div>
+
+                    <a class="Back" onclick="plusSlide(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlide(1)">&#10095;</a>
+                </div>
+                <br>
+                <div class="Dots">
+                    <span class="Dot" onclick="currentSlide(1)"></span>
+                    <span class="Dot" onclick="currentSlide(2)"></span>
+                    <span class="Dot" onclick="currentSlide(3)"></span>
+                    <span class="Dot" onclick="currentSlide(4)"></span>
+                    <span class="Dot" onclick="currentSlide(5)"></span>
+                    <span class="Dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+        <!-- SLIDESHOW END -->
+
+        <!-- ABOUT -->
+        <div id="About" class="Flexbox">
+            <div class="Column_2">
+                <img src="./Stylesheet/Images/Development.jpg" alt="Laptop">
+            </div>
+
+            <div class="Column_1">
+                <h1>About</h1> <!-- Customize all the text -->
+
+                <p>
+                    I am a software developer who loves to code! I'm always learning and great at working with a team.
+                    <br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s 
+                    Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br><br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+        <!-- ABOUT END -->
+
+        <!-- GITHUB -->
+        <div id="GitHub" class="Flexbox">
+            <div class="Column_1">
+                <h1>GitHub</h1> <!-- Customize all the text -->
+
+                <p>
+                    You can view my coding projects on my GitHub profile here: <!-- Center below in CSS -->
+                    <a href="https://github.com/mshigezumi" target="_blank">Michael Shigezumi's GitHub</a>
+                </p>
+            </div>
+
+            <div class="Column_2">
+                <a href="https://github.com/mshigezumi" target="_blank"><img src="Stylesheet/Images/GitHub.png" alt="GitHub"></a>
+            </div>
+        </div>
+        <!-- GITHUB END -->
+
+        <!-- CONTACT -->
+        <div id="Contact" class="Flexbox">
+            <div class="Column_2">
+                <img src="./Stylesheet/Images/Contact.jpg" alt="Contact" onclick="openForm()">
+            </div>
+
+            <div class="Column_1">
+                <h1>Contact</h1> <!-- Customize all the text -->
+
+                <p>
+                    Fill out the <a onclick="openForm()">form</a> with your name and email and I'll get back to you as soon as possible.
+                </p>
+
+                <!-- Move the popup out of the flexbox/column? -->
+                <button class="Popup_Button" onclick="openForm()">CONTACT</button>
+                <div class="Form_Popup" id="Form">
+                    <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="Form_Container">
+                        <h1>Contact</h1>
+
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" placeholder="Please enter your name here" required>
+
+                        <label for="email">Email:</label>
+                        <input type="text" id="Email" name="email" placeholder="Please enter your email here" required>
+    
+                        <label for="phone">Phone:</label>
+                        <input type="text" name="phone" placeholder="Please enter your phone number here">
+    
+                        <label for="message">Message:</label>
+                        <input type="text" id="Message" name="message" placeholder="Please write your message here">
+    
+                        <button type="submit" class="Submit_Button">SUBMIT</button>
+                        <button type="button" class="Close_Button" onclick="closeForm()">CLOSE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- CONTACT END-->
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="Center_Footer">
+                <p> <!-- Change to something else? -->
+                &copy; Prosper Consulting Inc., <a href="https://learncodinganywhere.com/">The Tech Academy</a>
+                <br> <!-- br needed? -->
+            </p></div>
+        </footer>
+        <!-- FOOTER END -->
+
+	</body>
+</html>
